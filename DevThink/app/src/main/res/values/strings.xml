@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DevThink</string>
+    //menu
+    <string name="home">home</string>
+    <string name="community">community</string>
+    <string name="setting">setting</string>
+
 </resources>
