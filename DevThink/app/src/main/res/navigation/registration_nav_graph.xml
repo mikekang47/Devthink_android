@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registration_nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/openingFragment">
+
+    <fragment
+        android:id="@+id/openingFragment"
+        android:name="com.example.devthink.registration.OpeningFragment"
+        android:label="OpeningFragment">
+        <action
+            android:id="@+id/action_openingFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+        <action
+            android:id="@+id/action_openingFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.devthink.registration.QuestionFragment"
+        android:label="QuestionFragment">
+        <action
+            android:id="@+id/action_questionFragment_to_signupSelectFragment"
+            app:destination="@id/signupSelectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupSelectFragment"
+        android:name="com.example.devthink.registration.SignUpSelectFragment"
+        android:label="SignupSelectFragment">
+        <action
+            android:id="@+id/action_signupSelectFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.devthink.registration.SignUpFragment"
+        android:label="SignUpFragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_signUpInformationFragment"
+            app:destination="@id/signUpInformationFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signupSelectFragment"
+            app:destination="@id/signupSelectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpInformationFragment"
+        android:name="com.example.devthink.registration.SignUpInformationFragment"
+        android:label="SignUpInformationFragment">
+        <action
+            android:id="@+id/action_signUpInformationFragment_to_signUpFinishFragment"
+            app:destination="@id/signUpFinishFragment" />
+        <action
+            android:id="@+id/action_signUpInformationFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFinishFragment"
+        android:name="com.example.devthink.registration.SignUpFinishFragment"
+        android:label="SignUpFinishFragment">
+        <action
+            android:id="@+id/action_signUpFinishFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.devthink.registration.SignInFragment"
+        android:label="SignInFragment">
+        <action
+            android:id="@+id/action_signInFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.devthink.MainActivity"
+        android:label="MainActivity"/>
+</navigation>
