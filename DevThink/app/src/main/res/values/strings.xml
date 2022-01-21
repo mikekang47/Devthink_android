@@ -1,8 +1,43 @@
 <resources>
     <string name="app_name">DevThink</string>
-    //menu
+
+    <!--    menu-->
     <string name="home">home</string>
     <string name="community">community</string>
     <string name="setting">setting</string>
 
+    <!--    activity_opening-->
+    <string name="string_opening_start">시작하기</string>
+    <string name="string_opening_login">계정이 이미 있어요</string>
+
+    <!--    activity_question-->
+    <string name="string_question_01">광고성 글을 차단하기 위한 간단한 문제 풀이\n후 가입 페이지로 이동합니다.</string>
+    <string name="string_question_02">아래는 Python으로 작성된 문제입니다.\n아래 문제를 읽고 출력될 답을 선택해주세요.</string>
+    <string name="string_ans_01">1. 5</string>
+    <string name="string_ans_02">2. 3</string>
+    <string name="string_ans_03">3. 0</string>
+    <string name="string_ans_04">4. 1</string>
+
+    <!--    activity_signup_main-->
+    <string name="signup_main_email">이메일로 회원가입</string>
+    <string name="signup_main_kakao">카카오톡으로 회원가입</string>
+
+    <!--    activity_signup-->
+    <string name="sign_up_left">이전</string>
+    <string name="sign_up_right">다음</string>
+    <string name="sign_up_email">이메일을 입력해주세요.</string>
+    <string name="sign_up_email_direct">직접 입력</string>
+    <string name="sign_up_at">\@</string>
+    <string name="sign_up_pw">비밀번호</string>
+    <string name="sign_up_pw_check">비밀번호 중복확인</string>
+    <string name="sign_up_phone">핸드폰 번호:</string>
+    <string name="sign_up_number_send">인증요청</string>
+    <string name="sign_up_number">인증번호:</string>
+    <string name="sign_up_number_check">인증확인</string>
+
+    <!--    activity_signup_information-->
+
+    <!--    activity_signup_finish-->
+    <string name="sign_up_finish">회원가입 완료!</string>
+    <string name="sign_up_finish_login">로그인 하기</string>
 </resources>

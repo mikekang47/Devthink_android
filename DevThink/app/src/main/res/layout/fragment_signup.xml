@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/signup_left_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/skyblue"
+            android:text="@string/sign_up_left"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/signup_right_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/skyblue"
+            android:text="@string/sign_up_right"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signup_email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/sign_up_email"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_left_btn" />
+
+        <EditText
+            android:id="@+id/signup_email_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/signup_at_tv"
+            app:layout_constraintStart_toStartOf="@id/signup_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/signup_email_tv" />
+
+        <EditText
+            android:id="@+id/signup_direct_input_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:hint="@string/sign_up_email_direct"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
+            app:layout_constraintStart_toEndOf="@id/signup_at_tv"
+            app:layout_constraintTop_toBottomOf="@id/signup_email_tv" />
+
+        <TextView
+            android:id="@+id/signup_at_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_at"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/signup_email_et"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/signup_email_et" />
+
+        <ImageView
+            android:id="@+id/signup_more_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/signup_more_btn"
+            app:layout_constraintBottom_toBottomOf="@id/signup_direct_input_et"
+            app:layout_constraintStart_toEndOf="@id/signup_direct_input_et"
+            app:layout_constraintTop_toTopOf="@id/signup_direct_input_et" />
+
+        <View
+            android:id="@+id/signup_id_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
+            app:layout_constraintStart_toStartOf="@id/signup_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/signup_email_et" />
+
+        <TextView
+            android:id="@+id/signup_pw_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sign_up_pw"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_email_tv" />
+
+        <EditText
+            android:id="@+id/signup_pw_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintStart_toStartOf="@id/signup_pw_tv"
+            app:layout_constraintTop_toBottomOf="@id/signup_pw_tv" />
+
+        <View
+            android:id="@+id/signup_pw_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/signup_pw_et"
+            app:layout_constraintStart_toStartOf="@id/signup_pw_et"
+            app:layout_constraintTop_toBottomOf="@id/signup_pw_et" />
+
+        <TextView
+            android:id="@+id/signup_pw_check_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sign_up_pw_check"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_pw_tv" />
+
+        <EditText
+            android:id="@+id/signup_pw_check_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintStart_toStartOf="@id/signup_pw_check_tv"
+            app:layout_constraintTop_toBottomOf="@id/signup_pw_check_tv" />
+
+        <View
+            android:id="@+id/signup_pw_check_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/signup_pw_check_et"
+            app:layout_constraintStart_toStartOf="@id/signup_pw_check_et"
+            app:layout_constraintTop_toBottomOf="@id/signup_pw_check_et" />
+
+        <TextView
+            android:id="@+id/signup_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sign_up_phone"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_pw_check_tv" />
+
+        <EditText
+            android:id="@+id/signup_phone_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintStart_toStartOf="@id/signup_phone_tv"
+            app:layout_constraintTop_toBottomOf="@id/signup_phone_tv" />
+
+        <View
+            android:id="@+id/signup_phone_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/signup_phone_et"
+            app:layout_constraintStart_toStartOf="@id/signup_phone_et"
+            app:layout_constraintTop_toBottomOf="@id/signup_phone_et" />
+
+        <Button
+            android:id="@+id/signup_phone_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/question_gray"
+            android:text="@string/sign_up_number_send"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/signup_phone_et"
+            app:layout_constraintEnd_toEndOf="@id/signup_phone_et"
+            app:layout_constraintTop_toTopOf="@id/signup_phone_et" />
+
+        <TextView
+            android:id="@+id/signup_phone_check_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sign_up_number"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_phone_tv" />
+
+        <EditText
+            android:id="@+id/signup_phone_check_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintStart_toStartOf="@id/signup_phone_check_tv"
+            app:layout_constraintTop_toBottomOf="@id/signup_phone_check_tv" />
+
+        <View
+            android:id="@+id/signup_phone_check_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/signup_phone_check_et"
+            app:layout_constraintStart_toStartOf="@id/signup_phone_check_et"
+            app:layout_constraintTop_toBottomOf="@id/signup_phone_check_et" />
+
+        <Button
+            android:id="@+id/signup_phone_check_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/question_gray"
+            android:text="@string/sign_up_number_check"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/signup_phone_check_et"
+            app:layout_constraintEnd_toEndOf="@id/signup_phone_btn"
+            app:layout_constraintStart_toStartOf="@id/signup_phone_btn"
+            app:layout_constraintTop_toTopOf="@id/signup_phone_check_et" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
