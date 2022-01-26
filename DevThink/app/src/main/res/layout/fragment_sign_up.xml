@@ -108,6 +108,19 @@
             app:layout_constraintTop_toBottomOf="@id/signup_email_et" />
 
         <TextView
+            android:id="@+id/signup_email_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_id_under_view" />
+
+        <TextView
             android:id="@+id/signup_pw_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

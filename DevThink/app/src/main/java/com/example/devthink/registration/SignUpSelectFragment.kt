@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.devthink.R
-import com.example.devthink.databinding.FragmentSignupSelectBinding
+import com.example.devthink.databinding.FragmentSignUpSelectBinding
 
 class SignUpSelectFragment: Fragment() {
 
-    lateinit var binding: FragmentSignupSelectBinding
+    lateinit var binding: FragmentSignUpSelectBinding
     private lateinit var navController: NavController
 
     override fun onCreateView(
@@ -20,7 +20,7 @@ class SignUpSelectFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSignupSelectBinding.inflate(inflater, container, false)
+        binding = FragmentSignUpSelectBinding.inflate(inflater, container, false)
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

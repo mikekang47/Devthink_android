@@ -11,7 +11,6 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.devthink.R
 import com.example.devthink.databinding.FragmentQuestionBinding
-import kotlinx.android.synthetic.main.fragment_question.*
 
 class QuestionFragment : Fragment() {
 
@@ -31,44 +30,45 @@ class QuestionFragment : Fragment() {
         navController = Navigation.findNavController(view)
 
         binding.apply {
+        // binding.queClearBtn.setOnClickListener {
             // 답이 맞은 경우 (3번을 체크)
-            que_ans_03_btn.setOnClickListener{
-                que_ans_01_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_02_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_03_btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
-                que_ans_04_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                questionClearBtn.setOnClickListener{
+            binding.queAns03Btn.setOnClickListener{
+                binding.queAns01Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns02Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns03Btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
+                binding.queAns04Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queClearBtn.setOnClickListener{
                     navController.navigate(R.id.action_questionFragment_to_signupSelectFragment)
                 }
             }
 
             // 틀린 답을 고르고, 다음을 누른 경우
-            que_ans_01_btn.setOnClickListener {
-                que_ans_01_btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
-                que_ans_02_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_03_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_04_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                questionClearBtn.setOnClickListener {
+            binding.queAns01Btn.setOnClickListener {
+                binding.queAns01Btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
+                binding.queAns02Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns03Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns04Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queClearBtn.setOnClickListener {
                     Toast.makeText(requireContext(), "오답입니다.", Toast.LENGTH_SHORT).show()
                 }
             }
 
-            que_ans_02_btn.setOnClickListener {
-                que_ans_01_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_02_btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
-                que_ans_03_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_04_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                questionClearBtn.setOnClickListener {
+            binding.queAns02Btn.setOnClickListener {
+                binding.queAns01Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns02Btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
+                binding.queAns03Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns04Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queClearBtn.setOnClickListener {
                     Toast.makeText(requireContext(), "오답입니다.", Toast.LENGTH_SHORT).show()
                 }
             }
 
-            que_ans_04_btn.setOnClickListener {
-                que_ans_01_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_02_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_03_btn.setBackgroundColor(resources.getColor(R.color.question_gray))
-                que_ans_04_btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
-                questionClearBtn.setOnClickListener {
+            binding.queAns04Btn.setOnClickListener {
+                binding.queAns01Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns02Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns03Btn.setBackgroundColor(resources.getColor(R.color.question_gray))
+                binding.queAns04Btn.setBackgroundColor(resources.getColor(R.color.question_skyblue))
+                binding.queClearBtn.setOnClickListener {
                     Toast.makeText(requireContext(), "오답입니다.", Toast.LENGTH_SHORT).show()
                 }
             }

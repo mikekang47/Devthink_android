@@ -11,6 +11,7 @@
     <color name="nav_selected">#B6E0E7</color>
 
     <color name="skyblue">#D5EFFB</color>
+    <color name="error">#FF0000</color>
     <color name="opening_skyblue">#B6E0E7</color>
 
     <color name="question_python">#3796A6</color>
@@ -19,4 +20,6 @@
 
     <color name="signup_kakao_yellow">#FFE500</color>
     <color name="signup_skyblue">#B6E0E7</color>
+
+    <color name="signup_info_skyblue">#ECF8FC</color>
 </resources>

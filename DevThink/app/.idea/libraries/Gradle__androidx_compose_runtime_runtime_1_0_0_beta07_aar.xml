@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.runtime:runtime:1.0.0-beta07@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/1977682fc9a7f7e1aaeb619b0a24bd7c/transformed/jetified-runtime-1.0.0-beta07/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/1977682fc9a7f7e1aaeb619b0a24bd7c/transformed/jetified-runtime-1.0.0-beta07/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/1977682fc9a7f7e1aaeb619b0a24bd7c/transformed/jetified-runtime-1.0.0-beta07/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/a83e2f12bc49c4e221521911154ecb03/transformed/jetified-runtime-1.0.0-beta07/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/a83e2f12bc49c4e221521911154ecb03/transformed/jetified-runtime-1.0.0-beta07/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/a83e2f12bc49c4e221521911154ecb03/transformed/jetified-runtime-1.0.0-beta07/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

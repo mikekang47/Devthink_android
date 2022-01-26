@@ -8,17 +8,17 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.devthink.R
-import com.example.devthink.databinding.FragmentSiginBinding
+import com.example.devthink.databinding.FragmentSignInBinding
 
 class SignInFragment: Fragment() {
-    lateinit var binding: FragmentSiginBinding
+    lateinit var binding: FragmentSignInBinding
     private lateinit var navController: NavController
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSiginBinding.inflate(inflater, container, false)
+        binding = FragmentSignInBinding.inflate(inflater, container, false)
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

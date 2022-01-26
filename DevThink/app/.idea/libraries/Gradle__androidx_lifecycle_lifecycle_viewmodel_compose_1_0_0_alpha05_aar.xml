@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha05@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/5c50a61ececcde3179ecc38fc6e979fd/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha05/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/5c50a61ececcde3179ecc38fc6e979fd/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha05/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/5c50a61ececcde3179ecc38fc6e979fd/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha05/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/d8e61b881f1af6970e397ca953fa5e50/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha05/res" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/d8e61b881f1af6970e397ca953fa5e50/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha05/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/d8e61b881f1af6970e397ca953fa5e50/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha05/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

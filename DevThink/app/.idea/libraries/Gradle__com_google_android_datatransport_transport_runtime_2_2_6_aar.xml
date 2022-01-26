@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.datatransport:transport-runtime:2.2.6@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/52efca81f040c2dd85c4b3835f2a9eda/transformed/jetified-transport-runtime-2.2.6/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/52efca81f040c2dd85c4b3835f2a9eda/transformed/jetified-transport-runtime-2.2.6/res" />
-      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/52efca81f040c2dd85c4b3835f2a9eda/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/603be8646b4500327a17083e99b9d039/transformed/jetified-transport-runtime-2.2.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/603be8646b4500327a17083e99b9d039/transformed/jetified-transport-runtime-2.2.6/res" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/Sdk/caches/transforms-3/603be8646b4500327a17083e99b9d039/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/2.2.6/7509bfbb3df6c8d1e8b5ab57eb22a40042d3ef64/transport-runtime-2.2.6-javadoc.jar!/" />
