@@ -3,26 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="homeViewModel"
+            type="com.example.devthink.home.HomeViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <FrameLayout
+
+        <androidx.slidingpanelayout.widget.SlidingPaneLayout
+            android:id="@+id/slidingPaneLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:id="@+id/container"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/bnv_main" />
+            app:layout_constraintBottom_toTopOf="@id/bnv_main"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/bnv_main"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/close"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="close"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.slidingpanelayout.widget.SlidingPaneLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnv_main"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            app:menu="@menu/bottom_nav_menu"
             app:itemIconTint="@color/color_nav_selector"
             app:itemTextColor="@color/color_nav_selector"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
