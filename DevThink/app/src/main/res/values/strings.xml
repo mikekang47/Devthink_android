@@ -62,4 +62,36 @@
     <string name="login_save">로그인 정보 저장</string>
     <string name="login_go">로그인 하기</string>
 
+<!--    fragment_community_free-->
+    <string name="free_hot">인기</string>
+    <string name="free_hot_title">가나다라마바사</string>
+    <string name="free_date">01/08</string>
+    <string name="free_nickname">나무늘보 다람쥐</string>
+    <string name="free_like_num">75</string>
+    <string name="free_content_title">가나다라마바사아자차카타파하</string>
+    <string name="community_like_num">10</string>
+
+<!--    item_project-->
+    <string name="project_name">코알라 프로젝트</string>
+    <string name="project_num">인원: 8명</string>
+    <string name="project_job">모집직무: 프론트, 백엔드</string>
+    <string name="project_deadline">22/01/17까지</string>
+    <string name="project_nickname">나무늘보 다람쥐</string>
+    
+<!--    fragement_community_free_project_apply-->
+    <string name="project">프로젝트 구인</string>
+    <string name="project_content">가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하 </string>
+    <string name="project_comment_nickname">부리부리대마왕</string>
+    <string name="project_comment_content">가나다라마바사아자차카타파하</string>
+    <string name="project_comment">댓글을 입력하세요.</string>
+
+
+    
 </resources>

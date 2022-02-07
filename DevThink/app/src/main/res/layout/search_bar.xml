@@ -16,6 +16,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="@color/signup_info_skyblue"
             android:maxLines="2"
+            android:completionThreshold="1"
             android:hint="@string/sign_up_stack_hint" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,4 +22,19 @@
     <color name="signup_skyblue">#B6E0E7</color>
 
     <color name="signup_info_skyblue">#ECF8FC</color>
+
+    <color name="free_project">#F4F8FE</color>
+    <color name="free_project_hot">#E5F6FD</color>
+    <color name="community_hot">#EF7867</color>
+    <color name="community_view">#C5EAF9</color>
+
+    <color name="community_job">#DDF2FA</color>
+    <color name="community_job_select">#94D7F1</color>
+
+    <color name="project_skyblue">#D5EFFB</color>
+    <color name="project_gray">#F2F4F4</color>
+
+    <color name="project_apply_skyblue">#C4E9F9</color>
+    <color name="project_apply_content_skyblue">#D5EFFB</color>
+
 </resources>
