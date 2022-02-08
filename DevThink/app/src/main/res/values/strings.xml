@@ -36,6 +36,21 @@
     <string name="sign_up_number_check">인증확인</string>
 
     <!--    activity_signup_information-->
+    <string name="sign_up_info">회원 정보 입력</string>
+    <string name="sign_up_guide">*필수 입력 사항입니다.</string>
+    <string name="sign_up_name">*이름: </string>
+    <string name="sign_up_nickname">*닉네임: </string>
+    <string name="sign_up_nickname_check">중복확인</string>
+    <string name="sign_up_job">*직무선택</string>
+    <string name="sign_up_job_student">지망생</string>
+    <string name="sign_up_job_front">프론트엔드</string>
+    <string name="sign_up_job_back">백엔드</string>
+    <string name="sign_up_job_android">안드로이드</string>
+    <string name="sign_up_job_ios">ios</string>
+    <string name="sign_up_stack">기술스택</string>
+    <string name="sign_up_stack_hint">ex) javascript</string>
+    <string name="sign_up_blog">기술 블로그 주소:</string>
+    <string name="sign_up_github">github 닉네임:</string>
 
     <!--    activity_signup_finish-->
     <string name="sign_up_finish">회원가입 완료!</string>

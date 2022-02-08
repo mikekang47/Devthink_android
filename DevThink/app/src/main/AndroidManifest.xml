@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DevThink">
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".community.CommunityActivity"></activity>
         <activity
             android:name=".registration.LoginActivity"
             android:exported="true">
