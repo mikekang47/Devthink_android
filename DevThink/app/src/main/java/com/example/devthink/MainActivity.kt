@@ -38,8 +38,10 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 R.id.settingBtn -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.container, SettingFragment()).commit()
+//                    supportFragmentManager.beginTransaction()
+//                        .replace(R.id.container, SettingFragment()).commit()
+                    val intent = Intent(this, SettingFragment::class.java)
+                    startActivity(intent)
                 }
                 R.id.homeBtn -> {
                     supportFragmentManager.beginTransaction()

@@ -55,4 +55,81 @@
     <!--    activity_signup_finish-->
     <string name="sign_up_finish">회원가입 완료!</string>
     <string name="sign_up_finish_login">로그인 하기</string>
+
+    <!--    activity_login-->
+    <string name="login_email">ID(이메일)</string>
+    <string name="login_password">pass word</string>
+    <string name="login_save">로그인 정보 저장</string>
+    <string name="login_go">로그인 하기</string>
+
+    <!--    fragment_community_free-->
+    <string name="free_hot">인기</string>
+    <string name="free_hot_title">가나다라마바사</string>
+    <string name="free_date">01/08</string>
+    <string name="free_nickname">나무늘보 다람쥐</string>
+    <string name="free_like_num">75</string>
+    <string name="free_content_title">가나다라마바사아자차카타파하</string>
+    <string name="community_like_num">10</string>
+
+    <!--    item_project-->
+    <string name="project_name">코알라 프로젝트</string>
+    <string name="project_num">인원: 8명</string>
+    <string name="project_job">모집직무: 프론트, 백엔드</string>
+    <string name="project_deadline">22/01/17까지</string>
+    <string name="project_nickname">나무늘보 다람쥐</string>
+
+    <!--    fragement_community_free_project_apply-->
+    <string name="project">프로젝트 구인</string>
+    <string name="project_content">가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하
+        가나다라마바사아자차카타파하 </string>
+    <string name="project_comment_nickname">부리부리대마왕</string>
+    <string name="project_comment_content">가나다라마바사아자차카타파하</string>
+    <string name="project_comment">댓글을 입력하세요.</string>
+
+    <!--    fragment_setting-->
+    <string name="setting_modify">프로필 사진 수정</string>
+    <string name="setting_ninkname">부리부리 대마왕</string>
+    <string name="setting_stack">프론트엔드</string>
+    <string name="setting_name">김가나</string>
+    <string name="setting_email">김가나다라마바사@가나다라마바사</string>
+    <string name="setting_myprofile_setting">내 프로필 설정</string>
+    <string name="setting_take_picture">사진 찍기</string>
+
+    <string name="setting_announcement">알림 설정</string>
+    <string name="setting_notice">공지사항</string>
+    <string name="setting_inquiry">문의하기</string>
+    <string name="setting_service">서비스 이용약관</string>
+    <string name="setting_personal_info">개인정보 처리 방침</string>
+    <string name="setting_version">버전 정보</string>
+    <string name="setting_version_info">6.2.14(20211102011)</string>
+    
+<!--    fragment_setting_profile_check-->
+    <string name="profile_check_title">비밀번호 확인</string>
+    <string name="profile_check_explain_01">본인 확인을 위해</string>
+    <string name="profile_check_explain_02">비밀번호를 입력해주세요</string>
+    <string name="profile_check_ok">확인</string>
+
+<!--    fragment_setting_personal_info-->
+    <string name="profile_personal_info_title">프로필 수정</string>
+    <string name="profile_email">이메일을 입력해주세요.</string>
+    <string name="profile_pw">비밀번호:</string>
+    <string name="profile_name">이름:</string>
+    <string name="profile_nickname">닉네임:</string>
+    <string name="profile_job">직무 변경</string>
+    <string name="profile_blog">기술 블로그</string>
+    <string name="profile_github">github 닉네임:</string>
+    
+    <string name="notice_title">PUSH 알림</string>
+    <string name="notice_allow">알림 허용</string>
+    <string name="sound">사운드</string>
+    <string name="bagde">배지</string>
+    <string name="preview">미리보기 표시</string>
+    <string name="chatting">채팅 알림</string>
+
 </resources>

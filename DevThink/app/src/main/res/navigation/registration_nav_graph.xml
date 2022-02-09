@@ -81,4 +81,38 @@
         android:id="@+id/mainActivity"
         android:name="com.example.devthink.MainActivity"
         android:label="MainActivity"/>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.devthink.setting.SettingFragment"
+        android:label="SettingFragment">
+        <action
+            android:id="@+id/action_settingFragment_to_settingPersonalInfoFragment"
+            app:destination="@+id/settingPersonalInfoFragment"/>
+
+        <action
+            android:id="@+id/action_settingFragment_to_settingNoticeFragment"
+            app:destination="@+id/settingNoticeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingPersonalInfoFragment"
+        android:name="com.example.devthink.setting.SettingPersonalInfoFragment"
+        android:label="SettingPersonalInfoFragment">
+        <action
+            android:id="@+id/action_settingPersonalInfoFragment_to_settingProfileCheckFragment"
+            app:destination="@+id/settingProfileCheckFragment"/>
+        <action
+            android:id="@+id/action_settingPersonalInfoFragment_to_settingFragment"
+            app:destination="@+id/settingFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingProfileCheckFragment"
+        android:name="com.example.devthink.setting.SettingProfileCheckFragment"
+        android:label="SettingProfileCheckFragment">
+        <action
+            android:id="@+id/action_settingProfileCheckFragment_to_SettingFragment"
+            app:destination="@+id/settingFragment"/>
+    </fragment>
 </navigation>
