@@ -25,7 +25,7 @@ class SignInFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
 
-        binding.signInToMain.setOnClickListener {
+        binding.signinFinishLoginBtn.setOnClickListener {
             navController.navigate(R.id.action_signInFragment_to_mainActivity)
         }
     }

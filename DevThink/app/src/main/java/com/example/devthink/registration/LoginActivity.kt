@@ -10,7 +10,6 @@ import com.example.devthink.home.HomeFragment
 class LoginActivity : AppCompatActivity() {
     private val binding: ActivityLoginBinding by lazy {
         ActivityLoginBinding.inflate(layoutInflater)
-        /*DataBindingUtil.setContentView(this,R.layout.activity_login)*/
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
