@@ -1,5 +1,6 @@
 package com.example.devthink.repository.network
 
+import com.example.devthink.repository.network.api.ContentApi
 import com.example.devthink.repository.network.api.UserApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -13,6 +14,11 @@ private val retrofit = Retrofit.Builder()
 object RegistrationService {
     val USER_API: UserApi by lazy {
         retrofit.create(UserApi::class.java)
+    }
+}
+object ContentService {
+    val retrofitService: ContentApi by lazy {
+        retrofit.create(ContentApi::class.java)
     }
 }
 

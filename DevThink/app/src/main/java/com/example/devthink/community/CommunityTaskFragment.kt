@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.devthink.databinding.FragmentCommunityTaskBinding
 
-class TaskFragment : Fragment() {
+class CommunityTaskFragment : Fragment() {
     lateinit var binding: FragmentCommunityTaskBinding
     override fun onCreateView(
         inflater: LayoutInflater,

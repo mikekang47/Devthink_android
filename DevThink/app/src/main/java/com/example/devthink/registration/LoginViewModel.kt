@@ -25,11 +25,10 @@ class LoginViewModel : ViewModel() {
         viewModelScope.launch {
             if (userRepository.doLogin(email.value.toString(), password.value.toString())) {
                 loginStatus.postValue(Event(Status.SUCCESS))
-                Log.d("logintest","네이스")
+                Log.d("logintest","login ok")
             } else {
                 loginMessage.postValue(R.string.notice_check_email_password)
                 loginStatus.postValue(Event(Status.FAILURE))
-                Log.d("logintest","그러지마")
             }
         }
     }

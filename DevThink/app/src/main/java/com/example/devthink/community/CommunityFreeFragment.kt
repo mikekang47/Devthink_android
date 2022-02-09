@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.devthink.databinding.FragmentCommunityQuestionBinding
+import com.example.devthink.databinding.FragmentCommunityFreeBinding
 
-class QuestionFragment : Fragment() {
-    lateinit var binding: FragmentCommunityQuestionBinding
+class CommunityFreeFragment : Fragment() {
+    lateinit var binding: FragmentCommunityFreeBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentCommunityQuestionBinding.inflate(inflater, container, false)
+        binding = FragmentCommunityFreeBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

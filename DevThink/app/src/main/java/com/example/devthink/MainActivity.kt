@@ -4,9 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.fragment.app.viewModels
 import com.example.devthink.community.CommunityActivity
-import com.example.devthink.community.CommunityFragment
 import com.example.devthink.databinding.ActivityMainBinding
 import com.example.devthink.home.HomeFragment
 import com.example.devthink.home.HomeViewModel
