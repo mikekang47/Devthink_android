@@ -13,8 +13,8 @@
             android:id="@+id/action_openingFragment_to_questionFragment"
             app:destination="@id/questionFragment" />
         <action
-            android:id="@+id/action_openingFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
+            android:id="@+id/action_openingFragment_to_signInActivity"
+            app:destination="@id/signInActivity" />
     </fragment>
 
     <fragment
@@ -64,21 +64,13 @@
         android:name="com.example.devthink.registration.SignUpFinishFragment"
         android:label="SignUpFinishFragment">
         <action
-            android:id="@+id/action_signUpFinishFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.example.devthink.registration.SignInFragment"
-        android:label="SignInFragment">
-        <action
-            android:id="@+id/action_signInFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_signUpFinishFragment_to_signInActivity"
+            app:destination="@id/signInActivity" />
     </fragment>
 
     <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.devthink.MainActivity"
-        android:label="MainActivity"/>
+        android:id="@+id/signInActivity"
+        android:name="com.example.devthink.registration.SignInActivity"
+        android:label="SignInActivity"/>
+
 </navigation>

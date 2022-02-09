@@ -26,7 +26,7 @@ class SignUpFinishFragment : Fragment() {
         navController = Navigation.findNavController(view)
 
         binding.signupFinishLoginBtn.setOnClickListener {
-            navController.navigate(R.id.action_signUpFinishFragment_to_signInFragment)
+            navController.navigate(R.id.action_signUpFinishFragment_to_signInActivity)
         }
     }
 }

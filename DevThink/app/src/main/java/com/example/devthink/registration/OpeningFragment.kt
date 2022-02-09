@@ -28,7 +28,7 @@ class OpeningFragment : BaseFragment<FragmentOpeningBinding>(R.layout.fragment_o
 
 
         binding.openingSigninBtn.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_openingFragment_to_signInFragment)
+            view.findNavController().navigate(R.id.action_openingFragment_to_signInActivity)
             //navController.navigate(R.id.action_openingFragment_to_signInFragment)
         }
         binding.openingStartBtn.setOnClickListener {

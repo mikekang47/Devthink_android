@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">DevThink</string>
 
+    <!--login-->
+    <string name="empty_text">""</string>
+    <string name="notice_error_email">이메일 형식이 올바르지 않습니다.</string>
+    <string name="notice_input_email_password">이메일과 비밀번호를 입력해주세요.</string>
+    <string name="notice_check_email_password">"* 이메일 / 패스워드를 확인해주세요."</string>
+    <string name="notice_error_password">비밀번호가 일치하지 않습니다.</string>
+    <string name="notice_login_check">로그인 확인 text</string>
+
     <!--    menu-->
     <string name="home">home</string>
     <string name="community">community</string>
