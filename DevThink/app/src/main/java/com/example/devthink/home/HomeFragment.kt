@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
             noteBtn.setOnClickListener { homeViewModel.openRightPane() }
             noticeBtn.setOnClickListener { homeViewModel!!.openRightPane() }
         }*/
-        binding.noteBtn.setOnClickListener { homeViewModel.openRightPane() }
+        binding.homeNoteBtn.setOnClickListener { homeViewModel.openRightPane() }
         return binding.root
     }
 }

@@ -72,7 +72,9 @@ class CommunityReviewFragment : Fragment() {
                 Log.d(TAG, "onResponse Token: ${book!!.scoreAvg}")
                 Log.d(TAG, "onResponse Token: ${book!!.writer}")
 
-                bookid.setText(book!!.writer)
+                home_best_book_author_tv.setText(book!!.writer)
+                home_best_book_title_01_tv.setText(book!!.name)
+
             }
         })
     }
