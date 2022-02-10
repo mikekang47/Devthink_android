@@ -23,7 +23,9 @@ class SettingPersonalInfoRoleFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        binding.personalInfoBtn.setOnClickListener {
+            view.findNavController().navigate(R.id.action_settingPersonalInfoRoleFragment_to_SettingFragment)
+        }
         /*binding.settingCheckOkBtn.setOnClickListener {
             view.findNavController().navigate(R.id.action_settingProfileCheckFragment_to_SettingPersonalInfoFragment)
         }

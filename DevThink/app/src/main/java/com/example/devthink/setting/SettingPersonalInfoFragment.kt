@@ -30,6 +30,8 @@ class SettingPersonalInfoFragment: Fragment() {
 
         binding.settingPersonalExitIv.setOnClickListener {
             view.findNavController().navigate(R.id.action_settingPersonalInfoFragment_to_settingFragment)
+            onDestroy()
+            onDestroyView()
         }
     }
 }

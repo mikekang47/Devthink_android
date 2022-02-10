@@ -11,7 +11,7 @@ import androidx.navigation.findNavController
 import com.example.devthink.R
 import com.example.devthink.databinding.FragmentSettingNoticeBinding
 
-class SettingNoticeFragment: Fragment() {
+class SettingNoticeFragment : Fragment() {
     lateinit var binding: FragmentSettingNoticeBinding
     /*private lateinit var navController: NavController*/
 
@@ -30,6 +30,9 @@ class SettingNoticeFragment: Fragment() {
 
         binding.settingNoticeExitIv.setOnClickListener {
             view.findNavController().navigate(R.id.action_settingNoticeFragment_to_SettingFragment)
+            onDestroy()
+            onDestroyView()
         }
     }
+
 }

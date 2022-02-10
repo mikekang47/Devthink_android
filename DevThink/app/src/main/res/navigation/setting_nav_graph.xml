@@ -61,12 +61,18 @@
         android:id="@+id/settingServiceFragment"
         android:name="com.example.devthink.setting.SettingServiceFragment"
         android:label="SettingServiceFragment">
+        <action
+            android:id="@+id/action_settingServiceFragment_to_SettingFragment"
+            app:destination="@+id/settingFragment"/>
     </fragment>
 
     <fragment
         android:id="@+id/settingPersonalInfoRoleFragment"
         android:name="com.example.devthink.setting.SettingPersonalInfoRoleFragment"
         android:label="SettingPersonalInfoRoleFragment">
+        <action
+            android:id="@+id/action_settingPersonalInfoRoleFragment_to_SettingFragment"
+            app:destination="@+id/settingFragment"/>
     </fragment>
 
 </navigation>

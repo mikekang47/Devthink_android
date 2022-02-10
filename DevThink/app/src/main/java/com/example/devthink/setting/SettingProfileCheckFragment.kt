@@ -28,9 +28,13 @@ class SettingProfileCheckFragment: Fragment() {
 
         binding.settingCheckOkBtn.setOnClickListener {
             view.findNavController().navigate(R.id.action_settingProfileCheckFragment_to_SettingPersonalInfoFragment)
+            onDestroy()
+            onDestroyView()
         }
         binding.settingCheckExitIv.setOnClickListener {
             view.findNavController().navigate(R.id.action_settingProfileCheckFragment_to_SettingFragment)
+            onDestroy()
+            onDestroyView()
         }
     }
 }

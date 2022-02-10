@@ -183,6 +183,7 @@
                 android:text="4. 가나다라마바사 아자차카타파하 라마바사 아자차카 타파하"/>
 
             <Button
+                android:id="@+id/personal_info_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
