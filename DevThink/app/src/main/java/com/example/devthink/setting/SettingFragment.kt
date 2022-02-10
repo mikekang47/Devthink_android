@@ -5,10 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import com.example.devthink.R
 import com.example.devthink.databinding.FragmentSettingBinding
 
 class SettingFragment : Fragment() {
     lateinit var binding: FragmentSettingBinding
+    private lateinit var navController: NavController
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -16,8 +21,18 @@ class SettingFragment : Fragment() {
     ): View? {
         binding = FragmentSettingBinding.inflate(inflater, container, false)
         return binding.root
-        binding.settingBtn.setOnClickListener {
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
+
+        binding.settingModifyTv.setOnClickListener {
+            navController.navigate(R.id.action_settingFragment_to_settingProfileCheckFragment)
+        }
+        binding.settingAnnouncementTv.setOnClickListener {
+            navController.navigate(R.id.action_settingFragment_to_settingNoticeFragment)
         }
     }
 }

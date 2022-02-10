@@ -37,4 +37,8 @@
     <color name="project_apply_skyblue">#C4E9F9</color>
     <color name="project_apply_content_skyblue">#D5EFFB</color>
 
+    <color name="setting_profile_skyblue">#A8DEF6</color>
+    <color name="setting_profile_gray">#E5E5E5</color>
+    <color name="setting_announcement">#52BEED</color>
+
 </resources>
