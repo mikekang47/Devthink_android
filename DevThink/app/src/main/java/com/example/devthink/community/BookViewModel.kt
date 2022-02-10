@@ -21,7 +21,7 @@ class BookViewModel(
     val mostBook: LiveData<Book>
         get() = _mostBook
 
-    fun loadMostBook() {
+    /*fun loadMostBook() {
         viewModelScope.loadingLaunch {
             try {
                 _mostBook.value = contentRepository.loadMostBook()
@@ -29,9 +29,9 @@ class BookViewModel(
             } catch (e: Exception) {
             }
         }
-    }
+    }*/
 
-    init {
+    /*init {
         loadMostBook()
-    }
+    }*/
 }

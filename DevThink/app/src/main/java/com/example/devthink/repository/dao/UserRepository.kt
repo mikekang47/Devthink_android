@@ -21,7 +21,6 @@ class UserRepository {
             false
         }
 
-
     companion object {
         private const val TOKEN = "token"
         private const val SIGNING_TOKEN = "signing token"

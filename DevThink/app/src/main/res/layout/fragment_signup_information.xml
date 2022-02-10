@@ -124,6 +124,14 @@
             app:layout_constraintEnd_toEndOf="@id/signup_right_btn"
             app:layout_constraintStart_toEndOf="@id/signup_info_nickname_tv"
             app:layout_constraintTop_toTopOf="@id/signup_info_nickname_tv" />
+        <Button
+            android:id="@+id/nicknameCheck"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="중복확인"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@id/singup_info_nickname_under_view"
+            app:layout_constraintBottom_toTopOf="@id/singup_info_nickname_under_view"/>
 
         <View
             android:id="@+id/singup_info_nickname_under_view"

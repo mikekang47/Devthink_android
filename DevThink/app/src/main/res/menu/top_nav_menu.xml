@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/reviewBtn"
+        android:title="책리뷰"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/freeBtn"
+        android:title="자유"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/questionBtn"
+        android:title="문의"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/taskBtn"
+        android:title="직무"
+        app:showAsAction="always" />
+</menu>
