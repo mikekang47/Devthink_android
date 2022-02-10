@@ -1,23 +1,29 @@
 package com.example.devthink.setting
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.example.devthink.R
 import com.example.devthink.databinding.FragmentSettingBinding
+import com.example.devthink.util.base.BaseFragment
 
-class SettingFragment : Fragment() {
-    lateinit var binding: FragmentSettingBinding
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentSettingBinding.inflate(inflater, container, false)
-        return binding.root
-        binding.settingBtn.setOnClickListener {
+class SettingFragment : BaseFragment<FragmentSettingBinding>(R.layout.fragment_setting) {
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.settingModifyTv.setOnClickListener {
+            view.findNavController().navigate(R.id.action_settingFragment_to_settingProfileCheckFragment)
+        }
+        binding.settingAnnouncementTv.setOnClickListener {
+            view.findNavController().navigate(R.id.action_settingFragment_to_settingNoticeFragment)
+        }
+
+        binding.settingServiceTv.setOnClickListener {
+            view.findNavController().navigate(R.id.action_settingFragment_to_settingServiceFragment)
+        }
+        binding.settingPersonalTv.setOnClickListener {
+            view.findNavController().navigate(R.id.action_settingFragment_to_settingPersonalInfoRoleFragment)
         }
     }
 }

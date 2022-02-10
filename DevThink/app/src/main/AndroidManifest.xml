@@ -17,6 +17,7 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".community.CommunityActivity"></activity>
         <activity android:name=".registration.SignInActivity"></activity>
+        <activity android:name=".setting.SettingActivity"></activity>
         <activity
             android:name=".registration.LoginActivity"
             android:exported="true">

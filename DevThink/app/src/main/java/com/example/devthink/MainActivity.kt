@@ -8,6 +8,7 @@ import com.example.devthink.community.CommunityActivity
 import com.example.devthink.databinding.ActivityMainBinding
 import com.example.devthink.home.HomeFragment
 import com.example.devthink.home.HomeViewModel
+import com.example.devthink.setting.SettingActivity
 import com.example.devthink.setting.SettingFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -36,8 +37,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 R.id.settingBtn -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.container, SettingFragment()).commit()
+                    /*supportFragmentManager.beginTransaction()
+                        .replace(R.id.container, SettingFragment()).commit()*/
+
+                    val intent = Intent(this, SettingActivity::class.java)
+                    startActivity(intent)
                 }
                 R.id.homeBtn -> {
                     supportFragmentManager.beginTransaction()
@@ -66,5 +70,10 @@ class MainActivity : AppCompatActivity() {
                 slidingPaneLayout.closePane()
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.bnvMain.selectedItemId = R.id.homeBtn
     }
 }
