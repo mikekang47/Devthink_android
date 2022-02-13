@@ -16,11 +16,13 @@
 
         <TextView
             android:id="@+id/signin_id_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="80dp"
+            android:gravity="center"
             android:text="id(이메일)"
+            android:background="@drawable/background_skyblue"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -53,11 +55,13 @@
 
         <TextView
             android:id="@+id/signin_pw_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
-            android:text="pw"
+            android:background="@drawable/background_skyblue"
+            android:text="pass word"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"

@@ -5,22 +5,22 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
+import com.example.devthink.MainActivity
 import com.example.devthink.R
 import com.example.devthink.databinding.ActivityCommunityBinding
 import com.example.devthink.home.HomeFragment
+import com.example.devthink.setting.SettingActivity
 import com.example.devthink.setting.SettingFragment
 
 class CommunityActivity: AppCompatActivity()  {
     private val binding: ActivityCommunityBinding by lazy {
         ActivityCommunityBinding.inflate(layoutInflater)
     }
-    /*private val bookViewModel by viewModels<BookViewModel>()*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding.apply {
             setContentView(root)
-            /*bookViewModel = this@CommunityActivity.bookViewModel*/
             lifecycleOwner = this@CommunityActivity
         }
 
@@ -32,29 +32,22 @@ class CommunityActivity: AppCompatActivity()  {
         binding.viewpager.adapter = adapter
         binding.CommunityTablayout.setupWithViewPager(binding.viewpager)
 
-        /*binding.bnvCommunity.setOnNavigationItemSelectedListener {
+        binding.bnvMain.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.reviewBtn -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.container11, CommunityReviewFragment()).commit()
+                R.id.communityBtn -> {
+
                 }
-                R.id.freeBtn -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.container11, CommunityFreeFragment()).commit()
+                R.id.settingBtn -> {
+                    val intent = Intent(this, SettingActivity::class.java)
+                    startActivity(intent)
                 }
-                R.id.questionBtn -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.container11, CommunityQuestionFragment()).commit()
-                }
-                R.id.taskBtn -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.container11, CommunityTaskFragment()).commit()
+                R.id.homeBtn -> {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
                 }
             }
             true
         }
-
-        // 초기 화면
-        binding.bnvCommunity.selectedItemId = R.id.reviewBtn*/
+        binding.bnvMain.selectedItemId = R.id.communityBtn
     }
 }

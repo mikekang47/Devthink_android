@@ -51,6 +51,13 @@
         android:id="@+id/signUpInformationFragment"
         android:name="com.example.devthink.registration.SignUpInformationFragment"
         android:label="SignUpInformationFragment">
+        <!--<argument
+            android:name="email"
+            app:argType="String" />
+        <argument
+            android:name="password"
+            app:argType="String" />-->
+
         <action
             android:id="@+id/action_signUpInformationFragment_to_signUpFinishFragment"
             app:destination="@id/signUpFinishFragment" />

@@ -56,11 +56,22 @@
             android:background="@null"
             android:inputType="text"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@id/signup_at_tv"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
             app:layout_constraintStart_toStartOf="@id/signup_email_tv"
             app:layout_constraintTop_toBottomOf="@id/signup_email_tv" />
+        <Button
+            android:id="@+id/signup_email_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/question_gray"
+            android:text="중복확인"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/signup_email_et"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_et"
+            app:layout_constraintTop_toTopOf="@id/signup_email_et" />
 
-        <EditText
+        <!--<EditText
             android:id="@+id/signup_direct_input_et"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -95,13 +106,13 @@
             android:src="@drawable/signup_more_btn"
             app:layout_constraintBottom_toBottomOf="@id/signup_direct_input_et"
             app:layout_constraintStart_toEndOf="@id/signup_direct_input_et"
-            app:layout_constraintTop_toTopOf="@id/signup_direct_input_et" />
+            app:layout_constraintTop_toTopOf="@id/signup_direct_input_et" />-->
 
         <View
             android:id="@+id/signup_id_under_view"
             android:layout_width="0dp"
             android:layout_height="10px"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:background="@color/skyblue"
             app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
             app:layout_constraintStart_toStartOf="@id/signup_email_tv"
@@ -141,7 +152,7 @@
             android:background="@null"
             android:inputType="textPassword"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
             app:layout_constraintStart_toStartOf="@id/signup_pw_tv"
             app:layout_constraintTop_toBottomOf="@id/signup_pw_tv" />
 
@@ -176,7 +187,7 @@
             android:background="@null"
             android:inputType="textPassword"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
             app:layout_constraintStart_toStartOf="@id/signup_pw_check_tv"
             app:layout_constraintTop_toBottomOf="@id/signup_pw_check_tv" />
 
@@ -211,7 +222,7 @@
             android:background="@null"
             android:inputType="phone"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
             app:layout_constraintStart_toStartOf="@id/signup_phone_tv"
             app:layout_constraintTop_toBottomOf="@id/signup_phone_tv" />
 
@@ -258,7 +269,7 @@
             android:background="@null"
             android:inputType="phone"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@id/signup_more_iv"
+            app:layout_constraintEnd_toEndOf="@id/signup_email_tv"
             app:layout_constraintStart_toStartOf="@id/signup_phone_check_tv"
             app:layout_constraintTop_toBottomOf="@id/signup_phone_check_tv" />
 

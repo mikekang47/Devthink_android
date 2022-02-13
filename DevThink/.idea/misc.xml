@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/drawable/background_btn_signin.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/drawable/background_sky_sky_blue.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/drawable/ic_community.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/drawable/ic_home.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/drawable/ic_launcher_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/drawable/ic_setting.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/activity_community.xml" value="0.33" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/activity_setting.xml" value="0.22604166666666667" />
-        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/activity_signin.xml" value="0.2046875" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/activity_signin.xml" value="0.5" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/fragment_community.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/fragment_community_free.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/fragment_community_question.xml" value="0.36614583333333334" />
@@ -32,6 +39,8 @@
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/fragment_signup.xml" value="0.33" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/fragment_signup_finish.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/fragment_signup_information.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/frgment_community_write_review.xml" value="0.25" />
+        <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/frgment_write_review.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/item_best_book.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/item_review_user.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/gaoga/Desktop/aaaa/Devthink_android/DevThink/app/src/main/res/layout/search_bar.xml" value="0.37864583333333335" />

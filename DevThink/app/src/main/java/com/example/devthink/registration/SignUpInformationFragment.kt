@@ -10,6 +10,8 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.devthink.R
 import com.example.devthink.databinding.FragmentSignupInformationBinding
+import com.example.devthink.registration.SignUpFragment.Companion.myEmail
+import com.example.devthink.registration.SignUpFragment.Companion.myPassword
 import com.example.devthink.repository.dto.request.SignupRequest
 import com.example.devthink.repository.dto.response.SignupResponse
 import com.example.devthink.repository.network.api.SignupApi
@@ -32,7 +34,7 @@ class SignUpInformationFragment : Fragment() {
 
     var signup: SignupResponse? = null
 
-    var user = SignupRequest(
+    /*var user = SignupRequest(
         blogAddr = "min.com",
         createAt = "2022-02-09T18:19:14.794Z",
         email = "hong@email.com",
@@ -44,10 +46,10 @@ class SignUpInformationFragment : Fragment() {
         point = 0,
         role = "senior",
         updateAt = "2022-02-09T18:19:14.794Z"
-    )
+    )*/
 
     var check: Boolean? = null
-    var emailResult: Boolean? = null
+    /*var emailResult: Boolean? = null*/
     var nicknameResult: Boolean? = null
 
 
@@ -87,7 +89,10 @@ class SignUpInformationFragment : Fragment() {
             SignupApi::class.java
         )
 
+
         binding.nicknameCheck.setOnClickListener {
+            //checkNickname("tester111", "test1234@email.com")
+
             checkNickname("tester111", "test1234@email.com")
         }
 
@@ -100,7 +105,7 @@ class SignUpInformationFragment : Fragment() {
         }
     }
 
-    // TODO: 체크의 경우 있으면 코드 400에 메세지 없어서 가능한 경우 코드 200에 false가 온다
+    // TODO: 체크의 경우 있으면 코드 400에 메세지 없어서 가능한 경우 코드 200에 false가 온다 + 닉네임 중복 이후 비동기 처리
 
     fun checkNickname(nickname: String, email: String): Boolean {
         userApi.checkNickname(nickname).enqueue(object : Callback<Boolean> {
@@ -116,7 +121,7 @@ class SignUpInformationFragment : Fragment() {
             }
         })
 
-        userApi.checkEmail(email).enqueue(object : Callback<Boolean> {
+        /*userApi.checkEmail(email).enqueue(object : Callback<Boolean> {
             override fun onFailure(call: Call<Boolean>, t: Throwable) {
                 Log.d(TAG, "onFailure: ${t.message}")
             }
@@ -127,13 +132,32 @@ class SignUpInformationFragment : Fragment() {
                 if (emailCode == 400) emailResult = false
                 if (emailCode == 200) emailResult = true
             }
-        })
-        return nicknameResult == true && emailResult == true
+        })*/
+        return nicknameResult == true /*&& emailResult == true*/
     }
 
     fun signUp(): Boolean {
 
         var answer = false
+
+        var name = binding.signupInfoNameEt.text.toString()
+        var nickName = binding.signupInfoNicknameEt.text.toString()
+        var blogAddr = binding.signupInfoBlogEt.text.toString()
+        var gitNickname = binding.signupInfoGithubEt.text.toString()
+
+        var user = SignupRequest(
+            blogAddr = blogAddr,
+            createAt = "2022-02-09T18:19:14.794Z",
+            email = myEmail.toString(),
+            gitNickname = gitNickname,
+            name = name,
+            nickname = nickName,
+            password = myPassword.toString(),
+            phoneNum = "010-1234-1234",
+            point = 0,
+            role = "senior",
+            updateAt = "2022-02-09T18:19:14.794Z"
+        )
 
         userApi.requestSignup(user).enqueue(object : Callback<SignupResponse> {
             override fun onFailure(call: Call<SignupResponse>, t: Throwable) {
@@ -149,6 +173,8 @@ class SignUpInformationFragment : Fragment() {
                 /*signup = response.body()
                 Log.d(TAG, "onResponse: ${signup!!.email}")
                 Log.d(TAG, "onResponse: ${signup!!.id}")*/
+                myEmail = ""
+                myPassword = ""
                 answer = true
             }
         })
