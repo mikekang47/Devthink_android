@@ -15,6 +15,12 @@ class CommunityFreeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentCommunityFreeBinding.inflate(inflater, container, false)
+
+        //TODO: 현재 액티비티임 겹쳐지는 현상 수정해야함
+        val mActivity = activity as CommunityActivity
+        binding.fabButtonFree.setOnClickListener {
+            mActivity.writeFree()
+        }
         return binding.root
     }
 }

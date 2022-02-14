@@ -7,9 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.devthink.R
 import com.example.devthink.databinding.FragmentCommunityQuestionBinding
 import com.example.devthink.databinding.FragmentCommunityReviewBinding
 import com.example.devthink.entity.Book
+import com.example.devthink.home.HomeFragment
 import com.example.devthink.repository.network.api.ContentApi
 import kotlinx.android.synthetic.main.fragment_community_review.*
 import retrofit2.Call
@@ -51,6 +53,12 @@ class CommunityReviewFragment : Fragment() {
             ContentApi::class.java
         )
         loadMostBook()
+
+        //TODO: 현재 액티비티임 겹쳐지는 현상 수정해야함
+        val mActivity = activity as CommunityActivity
+        binding.fabButtonReview.setOnClickListener {
+            mActivity.writeReview()
+        }
 
         return binding.root
     }

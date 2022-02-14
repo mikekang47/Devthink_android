@@ -2,15 +2,11 @@ package com.example.devthink.community
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.viewModels
 import com.example.devthink.MainActivity
 import com.example.devthink.R
 import com.example.devthink.databinding.ActivityCommunityBinding
-import com.example.devthink.home.HomeFragment
 import com.example.devthink.setting.SettingActivity
-import com.example.devthink.setting.SettingFragment
 
 class CommunityActivity: AppCompatActivity()  {
     private val binding: ActivityCommunityBinding by lazy {
@@ -49,5 +45,19 @@ class CommunityActivity: AppCompatActivity()  {
             true
         }
         binding.bnvMain.selectedItemId = R.id.communityBtn
+    }
+
+    fun writeReview(){
+        /*supportFragmentManager.beginTransaction()
+            .replace(R.id.containerCommunity, CommunityWriteReviewFragment()).commit()*/
+        val intent = Intent(this, CommunityWriteReviewActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun writeFree(){
+        /*supportFragmentManager.beginTransaction()
+            .replace(R.id.containerCommunity, CommunityWriteReviewFragment()).commit()*/
+        val intent = Intent(this, CommunityWriteFreeActivity::class.java)
+        startActivity(intent)
     }
 }

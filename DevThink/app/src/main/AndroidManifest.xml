@@ -16,6 +16,10 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".community.CommunityActivity"></activity>
+
+        <activity android:name=".community.CommunityWriteFreeActivity"></activity>
+        <activity android:name=".community.CommunityWriteReviewActivity"></activity>
+
         <activity android:name=".registration.SignInActivity"></activity>
         <activity android:name=".setting.SettingActivity"></activity>
         <activity

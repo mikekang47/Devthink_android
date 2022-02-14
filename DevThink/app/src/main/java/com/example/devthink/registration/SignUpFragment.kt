@@ -61,21 +61,33 @@ class SignUpFragment : Fragment() {
                 navController.navigate(R.id.action_signUpFragment_to_signUpInformationFragment)
             }*/
         }
+
         binding.signupLeftBtn.setOnClickListener {
             navController.navigate(R.id.action_signUpFragment_to_signupSelectFragment)
         }
 
         binding.signupEmailBtn.setOnClickListener {
-            if(checkEmail(binding.signupEmailEt.text.toString())){
+            if (checkEmail(binding.signupEmailEt.text.toString())) {
                 check = true
+                binding.signupEmailErrorTv.visibility = View.GONE
                 //binding.signupEmailBtn.setBackgroundColor()
+            } else {
+                binding.signupEmailErrorTv.visibility = View.VISIBLE
+            }
+        }
+
+        binding.signupPwBtn.setOnClickListener {
+            if (binding.signupPwEt.text.toString() == binding.signupPwCheckEt.text.toString()) {
+                binding.signupPwErrorTv.visibility = View.GONE
+            } else {
+                binding.signupPwErrorTv.visibility = View.VISIBLE
             }
         }
     }
 
     // TODO: 체크의 경우 있으면 코드 400에 메세지 없어서 가능한 경우 코드 200에 false가 온다
 
-    fun checkEmail(email: String): Boolean{
+    fun checkEmail(email: String): Boolean {
         userApi.checkEmail(email).enqueue(object : Callback<Boolean> {
             override fun onFailure(call: Call<Boolean>, t: Throwable) {
                 Log.d(TAG, "onFailure: ${t.message}")
@@ -85,7 +97,7 @@ class SignUpFragment : Fragment() {
                 var emailCode = response.code()
                 Log.d(TAG, "onResponse: email $emailCode")
                 if (emailCode == 400) emailResult = false
-                if (emailCode == 200){
+                if (emailCode == 200) {
                     emailResult = true
                     myEmail = email
                 }

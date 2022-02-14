@@ -3,10 +3,13 @@ package com.example.devthink
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.viewModels
 import com.example.devthink.community.CommunityActivity
 import com.example.devthink.databinding.ActivityMainBinding
 import com.example.devthink.home.HomeFragment
+import com.example.devthink.home.HomeNoteFragment
+import com.example.devthink.home.HomeNoticeFragment
 import com.example.devthink.home.HomeViewModel
 import com.example.devthink.setting.SettingActivity
 import com.example.devthink.setting.SettingFragment
@@ -14,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val homeViewModel by viewModels<HomeViewModel>()
+    val homeViewModel by viewModels<HomeViewModel>()
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
@@ -57,10 +60,18 @@ class MainActivity : AppCompatActivity() {
         // 초기 화면
         binding.bnvMain.selectedItemId = R.id.homeBtn
 
-        binding.close.setOnClickListener { homeViewModel.closeRightPane() }
+        /*supportFragmentManager.beginTransaction()
+            .replace(R.id.noticeNoteContainer, HomeNoteFragment()).commit()*/
+        //binding.close.setOnClickListener { homeViewModel.closeRightPane() }
 
         initObserver()
     }
+
+    override fun onBackPressed() {
+        if (!homeViewModel.onBackPressed())
+            finish()
+    }
+
 
     private fun initObserver() {
         homeViewModel.isRightPaneOpen.observe(this) {
@@ -68,6 +79,17 @@ class MainActivity : AppCompatActivity() {
                 slidingPaneLayout.openPane()
             } else {
                 slidingPaneLayout.closePane()
+                Log.d("close",it.toString())
+            }
+        }
+
+        homeViewModel.isNoteNotice.observe(this){
+            if (it == true){
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.noticeNoteContainer, HomeNoteFragment()).commit()
+            }else{
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.noticeNoteContainer, HomeNoticeFragment()).commit()
             }
         }
     }

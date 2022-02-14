@@ -127,6 +127,7 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
+            android:text="중복된 이메일 입니다."
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/signup_id_under_view" />
@@ -191,15 +192,42 @@
             app:layout_constraintStart_toStartOf="@id/signup_pw_check_tv"
             app:layout_constraintTop_toBottomOf="@id/signup_pw_check_tv" />
 
+        <Button
+            android:id="@+id/signup_pw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/question_gray"
+            android:text="중복확인"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/signup_pw_check_et"
+            app:layout_constraintEnd_toEndOf="@id/signup_pw_check_et"
+            app:layout_constraintTop_toTopOf="@id/signup_pw_check_et" />
+
         <View
             android:id="@+id/signup_pw_check_under_view"
             android:layout_width="0dp"
             android:layout_height="10px"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:background="@color/skyblue"
             app:layout_constraintEnd_toEndOf="@id/signup_pw_check_et"
             app:layout_constraintStart_toStartOf="@id/signup_pw_check_et"
             app:layout_constraintTop_toBottomOf="@id/signup_pw_check_et" />
+
+        <TextView
+            android:id="@+id/signup_pw_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:text="비밀 번호가 다릅니다."
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_pw_check_under_view" />
+
 
         <TextView
             android:id="@+id/signup_phone_tv"

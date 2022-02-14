@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import com.example.devthink.R
 import com.example.devthink.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -30,7 +31,16 @@ class HomeFragment : Fragment() {
             noteBtn.setOnClickListener { homeViewModel.openRightPane() }
             noticeBtn.setOnClickListener { homeViewModel!!.openRightPane() }
         }*/
-        binding.homeNoteBtn.setOnClickListener { homeViewModel.openRightPane() }
+        binding.homeNoteBtn.setOnClickListener {
+            homeViewModel.openRightPane()
+            homeViewModel.openNote()
+        }
+
+        binding.homeNoticeBtn.setOnClickListener {
+            homeViewModel.openRightPane()
+            homeViewModel.openNotice()
+        }
+
         return binding.root
     }
 }

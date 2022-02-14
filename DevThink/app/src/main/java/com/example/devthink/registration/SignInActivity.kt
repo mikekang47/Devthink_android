@@ -28,6 +28,8 @@ class SignInActivity : AppCompatActivity() {
             if (it == Status.SUCCESS) {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
+                // TODO: 로그인 관련 종료해야함
+                //finish()
             }
         }
     }
