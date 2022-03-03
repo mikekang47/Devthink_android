@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/setting_personal_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_personal_info_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/setting_profile_skyblue"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/setting_personal_exit_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/exit_btn"
+            android:layout_marginRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/setting_personal_title_tv"
+            app:layout_constraintBottom_toBottomOf="@id/setting_personal_title_tv"
+            />
+
+        <TextView
+            android:id="@+id/setting_personal_email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/profile_email"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_title_tv" />
+
+        <EditText
+            android:id="@+id/setting_personal_email_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/setting_personal_at_tv"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_email_tv" />
+
+        <EditText
+            android:id="@+id/setting_personal_direct_input_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:hint="@string/sign_up_email_direct"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_email_tv"
+            app:layout_constraintStart_toEndOf="@id/setting_personal_at_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_email_tv" />
+
+        <TextView
+            android:id="@+id/setting_personal_at_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_at"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/setting_personal_email_et"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/setting_personal_email_et" />
+
+        <ImageView
+            android:id="@+id/setting_personal_more_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/signup_more_btn"
+            app:layout_constraintBottom_toBottomOf="@id/setting_personal_direct_input_et"
+            app:layout_constraintStart_toEndOf="@id/setting_personal_direct_input_et"
+            app:layout_constraintTop_toTopOf="@id/setting_personal_direct_input_et" />
+
+        <View
+            android:id="@+id/setting_personal_email_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_email_tv"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_email_et" />
+
+        <TextView
+            android:id="@+id/setting_personal_pw_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_pw"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_email_et"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_email_under_view" />
+
+        <EditText
+            android:id="@+id/setting_personal_pw_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_more_iv"
+            app:layout_constraintStart_toEndOf="@id/setting_personal_pw_tv"
+            app:layout_constraintTop_toTopOf="@id/setting_personal_pw_tv" />
+
+        <View
+            android:id="@+id/setting_personal_pw_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_pw_et"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_pw_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_pw_et" />
+
+        <TextView
+            android:id="@+id/setting_personal_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_pw_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_pw_under_view" />
+
+        <EditText
+            android:id="@+id/setting_personal_name_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_pw_under_view"
+            app:layout_constraintStart_toEndOf="@id/setting_personal_name_tv"
+            app:layout_constraintTop_toTopOf="@id/setting_personal_name_tv" />
+
+        <View
+            android:id="@+id/setting_personal_name_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_name_et"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_name_et" />
+
+        <TextView
+            android:id="@+id/setting_personal_nickname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_nickname"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_pw_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_name_tv" />
+
+        <EditText
+            android:id="@+id/setting_personal_nickname_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_name_under_view"
+            app:layout_constraintStart_toEndOf="@id/setting_personal_nickname_tv"
+            app:layout_constraintTop_toTopOf="@id/setting_personal_nickname_tv" />
+
+        <View
+            android:id="@+id/setting_personal_nickname_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_nickname_et"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_nickname_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_nickname_et" />
+
+        <TextView
+            android:id="@+id/setting_personal_job_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_job"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_pw_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_nickname_tv" />
+
+        <LinearLayout
+            android:id="@+id/setting_personal_job_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_job_tv"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_nickname_under_view"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_nickname_under_view"
+            >
+
+            <Button
+                android:id="@+id/setting_personal_job_stu_btn"
+                android:layout_width="68dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/question_gray"
+                android:padding="0dp"
+                android:text="@string/sign_up_job_student"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/setting_personal_job_front_btn"
+                android:layout_width="68dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/question_gray"
+                android:padding="0dp"
+                android:text="@string/sign_up_job_front"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/setting_personal_job_back_btn"
+                android:layout_width="68dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/question_gray"
+                android:padding="0dp"
+                android:text="@string/sign_up_job_back"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@id/setting_personal_job_front_btn"
+                app:layout_constraintTop_toBottomOf="@id/setting_personal_job_tv" />
+
+            <Button
+                android:id="@+id/setting_personal_job_android_btn"
+                android:layout_width="68dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/question_gray"
+                android:padding="0dp"
+                android:text="@string/sign_up_job_android"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@id/setting_personal_job_back_btn"
+                app:layout_constraintTop_toBottomOf="@id/setting_personal_job_tv" />
+
+            <Button
+                android:id="@+id/setting_personal_job_ios_btn"
+                android:layout_width="68dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/question_gray"
+                android:padding="0dp"
+                android:text="@string/sign_up_job_ios"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/setting_personal_nickname_under_view"
+                app:layout_constraintStart_toEndOf="@id/setting_personal_job_android_btn"
+                app:layout_constraintTop_toBottomOf="@id/setting_personal_job_tv" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/setting_personal_job_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_nickname_under_view"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_job_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_job_btn_layout" />
+
+        <TextView
+            android:id="@+id/setting_personal_blog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_blog"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_pw_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_job_btn_layout" />
+
+        <EditText
+            android:id="@+id/setting_personal_blog_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_nickname_under_view"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_blog_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_blog_tv" />
+
+        <View
+            android:id="@+id/setting_personal_blog_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_blog_et"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_blog_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_blog_et" />
+
+        <TextView
+            android:id="@+id/setting_personal_github_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_github"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_pw_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_blog_under_view" />
+
+        <EditText
+            android:id="@+id/setting_personal_github_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_nickname_under_view"
+            app:layout_constraintStart_toEndOf="@id/setting_personal_github_tv"
+            app:layout_constraintTop_toTopOf="@id/setting_personal_github_tv" />
+
+        <View
+            android:id="@+id/setting_personal_github_under_view"
+            android:layout_width="0dp"
+            android:layout_height="10px"
+            android:layout_marginTop="5dp"
+            android:background="@color/skyblue"
+            app:layout_constraintEnd_toEndOf="@id/setting_personal_github_et"
+            app:layout_constraintStart_toStartOf="@id/setting_personal_github_tv"
+            app:layout_constraintTop_toBottomOf="@id/setting_personal_github_et" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

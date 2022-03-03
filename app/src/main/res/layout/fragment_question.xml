@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/question_clear_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/skyblue"
+            android:text="다음"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/que_text_01_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/string_question_01"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/question_clear_btn" />
+
+        <TextView
+            android:id="@+id/que_text_02_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/string_question_02"
+            android:textColor="@color/question_python"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/que_text_01_tv"
+            app:layout_constraintStart_toStartOf="@id/que_text_01_tv"
+            app:layout_constraintTop_toBottomOf="@id/que_text_01_tv" />
+
+        <ImageView
+            android:id="@+id/que_python_iv"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/question_python"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/que_text_02_tv" />
+
+        <Button
+            android:id="@+id/que_ans_01_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/question_gray"
+            android:text="@string/string_ans_01"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/que_python_iv" />
+
+        <Button
+            android:id="@+id/que_ans_02_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/question_gray"
+            android:text="@string/string_ans_02"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/que_ans_01_btn" />
+
+        <Button
+            android:id="@+id/que_ans_03_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/question_gray"
+            android:text="@string/string_ans_03"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/que_ans_02_btn" />
+
+        <Button
+            android:id="@+id/que_ans_04_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/question_gray"
+            android:text="@string/string_ans_04"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/que_ans_03_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

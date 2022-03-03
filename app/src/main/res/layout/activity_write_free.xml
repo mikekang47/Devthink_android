@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bestFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:text="게시글 작성"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/freeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_sky_sky_blue"
+            android:hint="제목을 입력하세요"
+            android:padding="10dp"
+            android:singleLine="true"
+            app:layout_constraintTop_toBottomOf="@id/bestFree" />
+
+
+        <EditText
+            android:id="@+id/freeContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_sky_sky_blue"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/freeOkBtn"
+            app:layout_constraintTop_toBottomOf="@id/freeTitle" />
+
+        <TextView
+            android:id="@+id/freeOkBtn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_skyblue"
+            android:text="완료"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
