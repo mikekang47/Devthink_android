@@ -17,28 +17,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/que_project_tv"
-            android:layout_width="180dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/background_gray"
-            android:gravity="center"
-            android:text="프로젝트 구인"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/que_hot_layout"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/background_skyblue"
-            app:layout_constraintTop_toBottomOf="@id/que_project_tv">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
 
             <TextView
                 android:id="@+id/que_hot_hot_tv"
@@ -47,8 +37,8 @@
                 android:layout_margin="20dp"
                 android:text="인기"
                 android:textColor="@color/community_hot"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="@id/que_hot_layout"
+                app:layout_constraintTop_toTopOf="@id/que_hot_layout" />
 
             <TextView
                 android:id="@+id/que_hot_date_tv"
@@ -58,7 +48,7 @@
                 android:text="01/28"
                 android:textColor="@color/black"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/que_hot_layout"
                 app:layout_constraintStart_toStartOf="@id/que_hot_hot_tv" />
 
             <TextView
@@ -81,8 +71,8 @@
                 android:text="75"
                 android:textSize="12sp"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintBottom_toBottomOf="@id/que_hot_layout"
+                app:layout_constraintEnd_toEndOf="@id/que_hot_layout" />
 
             <ImageView
                 android:id="@+id/que_hot_like_iv"
@@ -107,29 +97,32 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/que_hot_layout"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="10dp"
-            tools:listitem="@layout/item_community_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/que_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/que_hot_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_community_content"/>
 
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabButtonQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="normal"
-            android:layout_marginBottom="50dp"
-            app:useCompatPadding="true"
-            android:backgroundTint="@color/floating_action_button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:maxImageSize="25dp"
-            android:src="@drawable/ic_pencil"/>
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabButtonQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_marginBottom="50dp"
+        app:useCompatPadding="true"
+        android:backgroundTint="@color/floating_action_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:maxImageSize="25dp"
+        android:src="@drawable/ic_pencil"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </layout>
