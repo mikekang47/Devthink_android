@@ -17,6 +17,8 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".community.CommunityActivity"></activity>
 
+        <activity android:name=".community.CommunityProjectActivity"></activity>
+
         <activity android:name=".community.CommunityWriteFreeActivity"></activity>
         <activity android:name=".community.CommunityWriteReviewActivity"></activity>
 

@@ -52,13 +52,13 @@ class CommunityFreeFragment : Fragment() {
         return binding.root
     }
 
-    // navController 질문
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//        navController = Navigation.findNavController(view)
-//
-//        binding.freeProjectTv.setOnClickListener {
-//            navController.navigate(R.id.action_communityProjectFragment_to_communityFreeFragment)
-//        }
-//    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // 프로젝트지원 클릭시 CommunityProjectActivity로 이동
+        binding.freeProjectTv.setOnClickListener {
+            val intent = Intent(getActivity(), CommunityProjectActivity::class.java)
+            startActivity(intent)
+        }
+    }
 }
