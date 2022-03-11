@@ -18,7 +18,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/projectTv"
+            android:id="@+id/free_project_tv"
             android:layout_width="180dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
@@ -31,17 +31,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/projectHotLayout"
+            android:id="@+id/free_hot_layout"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/background_skyblue"
-            app:layout_constraintTop_toBottomOf="@id/projectTv">
+            app:layout_constraintTop_toBottomOf="@id/free_project_tv">
 
             <TextView
-                android:id="@+id/projectHotTv"
+                android:id="@+id/free_hot_hot_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
@@ -51,6 +51,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/free_hot_date_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -58,20 +59,21 @@
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/projectHotTv" />
+                app:layout_constraintStart_toStartOf="@id/free_hot_hot_tv" />
 
             <TextView
+                android:id="@+id/free_hot_title_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:text="가나다라마바사"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@id/projectHotTv"
-                app:layout_constraintTop_toTopOf="@id/projectHotTv" />
+                app:layout_constraintStart_toEndOf="@id/free_hot_hot_tv"
+                app:layout_constraintTop_toTopOf="@id/free_hot_hot_tv" />
 
             <TextView
-                android:id="@+id/projectHotLikeCount"
+                android:id="@+id/free_hot_likeCnt_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -83,25 +85,37 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <ImageView
-                android:id="@+id/projectHotHeartIv"
+                android:id="@+id/free_hot_like_iv"
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:layout_marginEnd="5dp"
                 android:src="@drawable/ic_heart"
-                app:layout_constraintBottom_toBottomOf="@id/projectHotLikeCount"
-                app:layout_constraintEnd_toStartOf="@id/projectHotLikeCount" />
+                app:layout_constraintBottom_toBottomOf="@id/free_hot_likeCnt_tv"
+                app:layout_constraintEnd_toStartOf="@id/free_hot_likeCnt_tv" />
 
             <TextView
+                android:id="@+id/free_hot_nickname_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:text="나무늘보 다람쥐"
                 android:textSize="12sp"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/projectHotHeartIv"
-                app:layout_constraintEnd_toStartOf="@id/projectHotHeartIv" />
+                app:layout_constraintBottom_toBottomOf="@id/free_hot_like_iv"
+                app:layout_constraintEnd_toStartOf="@id/free_hot_like_iv" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/free_hot_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/item_community_content"/>
+
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabButtonFree"
@@ -115,6 +129,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:maxImageSize="25dp"
             android:src="@drawable/ic_pencil"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
