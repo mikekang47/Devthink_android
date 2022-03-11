@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/community_nav_graph"
+    app:startDestination="@+id/communityFreeFragment">
+
+    <fragment
+        android:id="@+id/communityFreeFragment"
+        android:name="com.example.devthink.community.CommunityFreeFragment"
+        android:label="CommunityFreeFragment">
+        <action
+            android:id="@+id/action_communityProjectFragment_to_communityFreeFragment"
+            app:destination="@id/communityProjectFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/communityProjectFragment"
+        android:name="com.example.devthink.community.CommunityProjectFragment"
+        android:label="CommunityProjectFragment">
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_project_background_cv"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/item_project_background_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/project_skyblue" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_project_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="@id/item_project_background_cv"
+            app:layout_constraintStart_toStartOf="@id/item_project_background_cv"
+            app:layout_constraintEnd_toEndOf="@id/item_project_background_cv" />
+
+        <TextView
+            android:id="@+id/item_project_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_num"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/item_project_name_tv"
+            app:layout_constraintStart_toStartOf="@id/item_project_name_tv" />
+
+        <TextView
+            android:id="@+id/item_project_job_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_job"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/item_project_num_tv"
+            app:layout_constraintStart_toStartOf="@id/item_project_name_tv" />
+
+        <TextView
+            android:id="@+id/item_project_deadline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_deadline"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/item_project_job_tv"
+            app:layout_constraintStart_toStartOf="@id/item_project_name_tv" />
+
+        <TextView
+            android:id="@+id/item_project_nickname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_nickname"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"
+            app:layout_constraintEnd_toEndOf="@id/item_project_background_cv"
+            app:layout_constraintBottom_toBottomOf="@id/item_project_background_cv" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
