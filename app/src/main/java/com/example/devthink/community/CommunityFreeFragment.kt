@@ -55,7 +55,7 @@ class CommunityFreeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // 프로젝트지원 클릭시 CommunityProjectActivity로 이동
+        // 프로젝트 구인 클릭시 CommunityProjectActivity로 이동
         binding.freeProjectTv.setOnClickListener {
             val intent = Intent(getActivity(), CommunityProjectActivity::class.java)
             startActivity(intent)
